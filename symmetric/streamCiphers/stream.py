@@ -6,7 +6,7 @@ from Crypto.Cipher import ARC4
 
 def encryptionMethod(textToEncrypt):
 
-    key = "myKeY"
+    key = "myKeY" # can use any size of key
 
     obj1 = ARC4.new(key)#to encrypt
     obj2 = ARC4.new(key)#to decrypt
