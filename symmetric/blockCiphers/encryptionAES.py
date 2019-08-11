@@ -20,7 +20,7 @@ def usingAES(text):
     print("\n\t\t________USING CFB Mode (input has no fix size) ________\n")
 
     #iv ------ Intialize Vector 
-    iv = Random.get_random_bytes(16) #Random string which is 16 bytes long (salt)
+    iv = Random.get_random_bytes(16) #Random string which is 16 bytes long (like salt)
     key = 'wIckEdisGooDBroo' #This is the key. Must be either 16, 24, or 32 bytes long
 
     #A stronger mode is CFB (Cipher feedback) which combines the plain block with the previous cipher block(add salt) before encrypting it.
@@ -43,7 +43,7 @@ def usingCBC(text):
     #input string must be a multiple of 16. CBC mode use to encrypt fix size of string
     text = text + "UPD" #input is updated for create a multiple of 16 characters
 
-    iv = Random.get_random_bytes(16) #Random string which is 16 bytes long (salt)
+    iv = Random.get_random_bytes(16) #Random string which is 16 bytes long. Act as the initialize vector when encryption startinig.(like salt)
     key = 'wIckEdisGooDBroo' #This is the key. Must be either 16, 24, or 32 bytes long
     
     obj1 = AES.new(key, AES.MODE_CBC, iv) #CBC ---- cipher Block Chaining
