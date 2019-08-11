@@ -1,0 +1,25 @@
+Symmetric encryption can be classified into two groups: stream ciphers and block ciphers.
+
+BLOCK CIPHERS
+
+    A block cipher is an encryption algorithm that encrypts a fixed size of n-bits of data - known as a block - at one time.
+    The usual sizes of each block are 64 bits, 128 bits, and 256 bits. So for example, a 64-bit block cipher will take
+    in 64 bits of plaintext and encrypt it into 64 bits of ciphertext. In cases where bits of plaintext is shorter than the
+    block size, padding schemes are called into play. Majority of the symmetric ciphers used today are actually block ciphers.
+    DES, Triple DES, AES, IDEA, and Blowfish are some of the commonly used encryption algorithms that fall under this group.  
+
+STREAM CIPHERS
+
+    A stream cipher is an encryption algorithm that encrypts 1 bit or byte of plaintext at a time. It uses an infinite stream
+    of pseudorandom bits as the key. For a stream cipher implementation to remain secure, its pseudorandom generator should be
+    unpredictable and the key should never be reused. Stream ciphers are designed to approximate an idealized cipher, known as
+    the One-Time Pad.
+
+    The One-Time Pad, which is supposed to employ a purely random key, can potentially achieve "perfect secrecy". That is, it's
+    supposed to be fully immune to brute force attacks. The problem with the one-time pad is that, in order to create such a
+    cipher, its key should be as long or even longer than the plaintext. In other words, if you have 500 MegaByte video file
+    that you would like to encrypt, you would need a key that's at least 4 Gigabits long.
+
+    Clearly, while Top Secret information or matters of national security may warrant the use of a one-time pad, such a cipher
+    would just be too impractical for day-to-day public use. The key of a stream cipher is no longer as long as the original
+    message. Hence, it can no longer guarantee "perfect secrecy". However, it can still achieve a strong level of security.

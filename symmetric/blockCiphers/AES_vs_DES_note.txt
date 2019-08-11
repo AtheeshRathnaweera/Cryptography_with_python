@@ -1,0 +1,5 @@
+            DES (Data Encryption Standard) and AES (Advanced Encryption Standard) both are the symmetric block cipher.
+AES was introduced to overcome the drawback of DES. As DES has a smaller key size which makes it less secure to overcome
+this triple DES was introduced but it turns out to be slower. Hence, later AES was introduced by the National Institute
+of Standard and Technology. The basic difference between DES and AES is that in DES plaintext block is divided into
+two halves before the main algorithm starts whereas, in AES the entire block is processed to obtain the ciphertext.
