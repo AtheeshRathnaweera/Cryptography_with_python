@@ -17,4 +17,4 @@ def getFileCheckSum(fileName):
     return h.hexdigest()
 
 
-print("This is the MD5 check sum: "+getFileCheckSum("D:/crypto/smileman.png"))
+print("\nThis is the MD5 check sum of the file : "+getFileCheckSum("smileman.png"))
