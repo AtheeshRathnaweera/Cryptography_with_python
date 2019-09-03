@@ -10,6 +10,7 @@
 #  OCB is by far the best mode, as it allows encryption and authentication in a single pass. However there are patents on it in USA.
 
 from Crypto.Cipher import AES
+
 from Crypto import Random
 
 def usingAES(text):
